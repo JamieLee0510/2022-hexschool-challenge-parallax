@@ -1,0 +1,170 @@
+@import '../../utils/styles.scss';
+
+.root1 {
+    width: 100%;
+    height: 100vh;
+
+    flex-direction: column;
+    // padding-left: 40px;
+    margin: 0;
+    overflow: hidden;
+    .title {
+        text-align: center;
+    }
+    .window_area_outer {
+        width: 90%;
+        height: 80%;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10px;
+        border-width: 3px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        // .window_area_inner {
+        //     cursor: url('/assets/section01/mouse.png'), pointer;
+        //     width: 100%;
+        //     height: 100%;
+        //     overflow: hidden;
+        //     display: flex;
+        //     flex-direction: column;
+
+        //     .window_desktop {
+        //         flex-grow: 1;
+        //         display: flex;
+        //         flex-direction: row;
+
+        //         .area1 {
+        //             flex: 20%;
+
+        //             height: 100%;
+        //             display: flex;
+        //             flex-direction: column;
+        //         }
+        //         .area2 {
+        //             flex: 60%;
+        //             height: 100%;
+        //         }
+        //         .area3 {
+        //             flex: 20%;
+        //             // background-color: green;
+
+        //             height: 100%;
+        //             display: flex;
+        //             flex-direction: column;
+        //         }
+        //     }
+        //     .window_dock {
+        //         height: 30px;
+        //         width: 100%;
+        //         background-color: $primaryColor;
+        //         border-top-style: solid;
+        //         border-color: $secondaryColor;
+        //         display: flex;
+        //         flex-direction: row;
+        //         justify-content: space-between;
+
+        //         .window_dock_item {
+        //             display: flex;
+        //             align-items: center;
+        //             justify-content: center;
+        //             color: $secondaryColor;
+        //         }
+        //         .window_menu {
+        //             height: 100%;
+        //             width: 70px;
+        //             border-right-style: solid;
+        //             border-color: $secondaryColor;
+        //         }
+        //         .window_clock {
+        //             height: 100%;
+        //             width: 100px;
+        //             border-left-style: solid;
+        //             border-color: $secondaryColor;
+        //         }
+        //     }
+        // }
+    }
+
+    .window_area_inner {
+        cursor: url('/assets/section01/mouse.png'), pointer;
+
+        width: 90%;
+        height: 85%;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10px;
+        border-width: 3px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        .window_desktop {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+
+            .area1 {
+                flex: 20%;
+
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .area2 {
+                flex: 60%;
+                height: 100%;
+            }
+            .area3 {
+                flex: 20%;
+                // background-color: green;
+
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .window_dock {
+            height: 30px;
+            width: 100%;
+            background-color: $primaryColor;
+            border-top-style: solid;
+            border-color: $secondaryColor;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .window_dock_item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $secondaryColor;
+            }
+            .window_menu {
+                height: 100%;
+                width: 120px;
+                border-right-style: solid;
+                border-color: $secondaryColor;
+                .menu_icon {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 5px;
+                }
+            }
+            .window_clock {
+                height: 100%;
+                width: 100px;
+                border-left-style: solid;
+                border-color: $secondaryColor;
+            }
+        }
+    }
+}

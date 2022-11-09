@@ -1,0 +1,8 @@
+.question-messages {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    .message {
+        width: 100%;
+    }
+}

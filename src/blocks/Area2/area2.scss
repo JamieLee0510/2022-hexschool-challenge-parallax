@@ -1,0 +1,97 @@
+@import '../../utils/styles.scss';
+
+.root2 {
+    width: 100%;
+    height: 470vh;
+    background-image: linear-gradient($primaryColor, $thirdColory, $fourColory);
+    .loading-area {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //border: solid green;
+        height: 100vh;
+
+        .loading-dislay-area {
+            margin-top: 200px;
+            position: relative;
+            // border: solid red;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            .loading-title {
+                h1 {
+                    color: $secondaryDarkColor;
+                }
+                display: flex;
+                direction: row;
+                justify-content: center;
+
+                .loading-effect {
+                    display: flex;
+                    align-items: center;
+                    width: 80px;
+                    height: 40px;
+                }
+            }
+            .loading-progress-area {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .question-message-area {
+            opacity: 0;
+            z-index: 2;
+            position: absolute;
+            top: 50px;
+            // border: solid blue;
+            width: 1000px;
+            height: 100vh;
+            padding-left: 100px;
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            .msg-container-left {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+            .msg-container-right {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            .message {
+                width: 400px;
+                height: 110px;
+            }
+        }
+        .ux-frontend-area {
+            // margin-top: 50px;
+            opacity: 0;
+            z-index: 3;
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            // border: solid blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .ux-frontend-title {
+                height: 80px;
+                width: 500px;
+            }
+            .ux-frontend-cooperate-area {
+                display: flex;
+                flex-direction: row;
+                .ux-frontend-cooperate-img {
+                    flex: 1;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

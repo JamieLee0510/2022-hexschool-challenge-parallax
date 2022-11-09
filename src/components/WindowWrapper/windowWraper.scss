@@ -1,0 +1,40 @@
+@import '../../utils/styles.scss';
+
+.window-wrapper {
+    border-color: $secondaryColor;
+    border-style: solid;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    top: 20%;
+
+    position: absolute;
+    z-index: 5;
+    .window-toolbar {
+        width: 100%;
+        border-bottom-style: solid;
+        border-color: $secondaryColor;
+        height: 30px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .window-container {
+        width: 100%;
+        flex-grow: 1;
+        background-color: $primaryColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .window-footer {
+            border-top-style: solid;
+            border-color: $secondaryColor;
+            height: 40px;
+            width: 100%;
+        }
+    }
+}

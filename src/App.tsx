@@ -1,26 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+
+import Area1 from './blocks/Area1';
+import Area2 from './blocks/Area2';
+
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Area3 from './blocks/Area3';
+import Area4 from './blocks/Area4';
+import Area5 from './blocks/Area5';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            {/* <Header /> */}
+            <Area1 />
+            <Area2 />
+            <Area3 />
+            <Area4 />
+            <Area5 />
+        </>
+    );
 }
 
 export default App;
