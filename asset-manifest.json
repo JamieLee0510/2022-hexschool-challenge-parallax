@@ -1,16 +1,32 @@
 {
   "files": {
-    "main.css": "/2022-hexschool-challenge-parallax/static/css/main.073c9b0a.css",
-    "main.js": "/2022-hexschool-challenge-parallax/static/js/main.b22141e1.js",
+    "main.css": "/2022-hexschool-challenge-parallax/static/css/main.0bf6d4d1.css",
+    "main.js": "/2022-hexschool-challenge-parallax/static/js/main.6a87fa91.js",
     "static/js/787.92bc2ec4.chunk.js": "/2022-hexschool-challenge-parallax/static/js/787.92bc2ec4.chunk.js",
-    "static/media/logo.svg": "/2022-hexschool-challenge-parallax/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/cor_left.png": "/2022-hexschool-challenge-parallax/static/media/cor_left.649e28bee786c88e73cb.png",
+    "static/media/cor_right.png": "/2022-hexschool-challenge-parallax/static/media/cor_right.b0af82af86ed8065df79.png",
+    "static/media/Thef2e4th_logo.png": "/2022-hexschool-challenge-parallax/static/media/Thef2e4th_logo.0df57c28714cef2d69a0.png",
+    "static/media/window_ver1_02.png": "/2022-hexschool-challenge-parallax/static/media/window_ver1_02.1bbc9434521de758e790.png",
+    "static/media/company03.png": "/2022-hexschool-challenge-parallax/static/media/company03.9e8006f2ba6dad704754.png",
+    "static/media/company01.png": "/2022-hexschool-challenge-parallax/static/media/company01.59be8c80440842486880.png",
+    "static/media/company02.png": "/2022-hexschool-challenge-parallax/static/media/company02.174ad7fe9f7968750cdb.png",
+    "static/media/background02.png": "/2022-hexschool-challenge-parallax/static/media/background02.ff7b9141d29437ad6f76.png",
+    "static/media/window_ver1_03.png": "/2022-hexschool-challenge-parallax/static/media/window_ver1_03.876999f0a0c721f6db99.png",
+    "static/media/window_ver1_01.png": "/2022-hexschool-challenge-parallax/static/media/window_ver1_01.a66ab4c4fd779b495870.png",
+    "static/media/icon_Internet.png": "/2022-hexschool-challenge-parallax/static/media/icon_Internet.52b5d0893ac023b8e441.png",
+    "static/media/icon_Design.png": "/2022-hexschool-challenge-parallax/static/media/icon_Design.29a22974813b283a9b60.png",
+    "static/media/icon_Mission.png": "/2022-hexschool-challenge-parallax/static/media/icon_Mission.2bd58d6ec7987d5bc85c.png",
+    "static/media/icon04.png": "/2022-hexschool-challenge-parallax/static/media/icon04.405e71ea5d0ccec348a9.png",
+    "static/media/icon01.png": "/2022-hexschool-challenge-parallax/static/media/icon01.d0e2eabafaa35b584f99.png",
+    "static/media/icon02.png": "/2022-hexschool-challenge-parallax/static/media/icon02.32e00a91411a94900bea.png",
+    "static/media/icon03.png": "/2022-hexschool-challenge-parallax/static/media/icon03.40bd80a5f60cb9d9089a.png",
     "index.html": "/2022-hexschool-challenge-parallax/index.html",
-    "main.073c9b0a.css.map": "/2022-hexschool-challenge-parallax/static/css/main.073c9b0a.css.map",
-    "main.b22141e1.js.map": "/2022-hexschool-challenge-parallax/static/js/main.b22141e1.js.map",
+    "main.0bf6d4d1.css.map": "/2022-hexschool-challenge-parallax/static/css/main.0bf6d4d1.css.map",
+    "main.6a87fa91.js.map": "/2022-hexschool-challenge-parallax/static/js/main.6a87fa91.js.map",
     "787.92bc2ec4.chunk.js.map": "/2022-hexschool-challenge-parallax/static/js/787.92bc2ec4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b22141e1.js"
+    "static/css/main.0bf6d4d1.css",
+    "static/js/main.6a87fa91.js"
   ]
 }
