@@ -50,6 +50,7 @@
         .timeline {
             height: 180px;
             display: grid;
+            padding-left: 10px;
             .timeline-item {
                 grid-row: 1;
                 display: flex;

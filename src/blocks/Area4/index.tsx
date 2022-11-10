@@ -15,8 +15,6 @@ export default function Area4() {
     const container = useRef<HTMLDivElement>(null);
     const timeLineRef = useRef<HTMLDivElement>(null);
 
-    const [xPx, setXpx] = useState(0);
-
     useLayoutEffect(() => {
         const ctx = gsap.context((self) => {
             ScrollTrigger.create({
@@ -30,19 +28,11 @@ export default function Area4() {
                 onEnter: (self) => {},
                 onUpdate: (self) => {
                     let p = self.progress;
-                    gsap.to(timeLineRef.current!, {
-                        xPercent: -100 * p,
-                        ease: 'none'
-                    });
-
-                    if (p <= 0.3) {
-                    }
-                    if (p > 0.3) {
-                    }
-
-                    if (Math.ceil(p * 10) === 4) {
-                    }
-                    if (Math.ceil(p * 10) === 8) {
+                    if (p > 0.1) {
+                        gsap.to(timeLineRef.current!, {
+                            xPercent: -150 * (p - 0.1),
+                            ease: 'none'
+                        });
                     }
                 },
                 onLeave: (self) => {},
@@ -51,11 +41,6 @@ export default function Area4() {
         }, container);
         return () => ctx.revert();
     }, []);
-
-    useLayoutEffect(() => {
-        console.log('timeline!', xPx);
-        timeLineRef.current!.style.transform = `translateX(-${xPx}px)`;
-    }, [xPx]);
 
     const TimeItemContainer = (timeItem: RaceInfo) => {
         return (
