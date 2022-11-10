@@ -44,7 +44,7 @@ export default function Area1() {
                     backgroundSize: '100%'
                 }
             );
-        });
+        },windowBg);
         return () => {
             ctx.revert();
         };

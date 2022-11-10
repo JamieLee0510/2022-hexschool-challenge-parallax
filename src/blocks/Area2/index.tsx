@@ -140,7 +140,7 @@ export default function Area2() {
                 pinSpacing: true,
                 start: 'top top',
                 end: 'bottom -250%', //scroll more 100%height
-                markers: true,
+                markers: false,
                 onEnter: (self) => {
                     //gsap.fromTo(loadingRef.current!, { opacity: 0 }, { opacity: 1 });
                 },

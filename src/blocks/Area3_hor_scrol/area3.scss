@@ -1,31 +1,18 @@
 @import '../../utils/styles.scss';
 
-.panels-container {
-    position: relative;
-    overflow: hidden;
+.root3 {
+    width: 300vw;
     height: 100vh;
-
+    background-color: #2e3966;
+    // background-size: 50px 50px;
     display: flex;
     flex-wrap: nowrap;
+    overflow-x: hidden;
 
-    .panel {
-        background-color: #2e3966;
-        height: 100vh;
-        top: 0;
-    }
-    .animate-panel{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-    }
     .company-panel {
         width: 100vw;
         height: 70vh;
-        height: 100vh;
-        top: 0;
+
         margin-top: auto;
         margin-bottom: auto;
         display: flex;

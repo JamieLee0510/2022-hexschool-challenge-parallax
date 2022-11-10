@@ -17,7 +17,7 @@ function App() {
             <Area1 />
             <Area2 />
             <Area3 />
-            <Area4 />
+            {/* <Area4 /> */}
             <Area5 />
         </>
     );
