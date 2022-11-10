@@ -11,13 +11,28 @@ import Area4 from './blocks/Area4';
 import Area5 from './blocks/Area5';
 
 function App() {
+    const [dimensions, setDimensions] = React.useState({
+        height: window.innerHeight,
+        width: window.innerWidth
+    });
+    React.useEffect(() => {
+        function handleResize() {
+            setDimensions({
+                height: window.innerHeight,
+                width: window.innerWidth
+            });
+        }
+
+        window.addEventListener('resize', handleResize);
+    });
+
     return (
         <>
             {/* <Header /> */}
             <Area1 />
             <Area2 />
             <Area3 />
-            {/* <Area4 /> */}
+            <Area4 />
             <Area5 />
         </>
     );

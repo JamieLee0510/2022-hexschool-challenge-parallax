@@ -72,6 +72,7 @@ export default function Area3() {
             {companyInfoList.map((company, index) => {
                 return (
                     <CompanyWrapper
+                        key={index}
                         companyName={company.companyName}
                         index={index}
                         title={company.title}
