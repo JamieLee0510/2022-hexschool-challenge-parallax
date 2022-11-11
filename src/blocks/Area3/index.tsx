@@ -5,51 +5,46 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './area3.scss';
 
 import { companyInfoList } from '../../utils/const';
+import { CompanyInfo } from '../../utils/type';
 
 type CompanyWrapperProps = {
-    companyName: string;
     index: number;
-    title: string;
-    mainSkill: string;
-    iconUrl: string;
-    detailUrl?: string;
+    companyInfo: CompanyInfo;
 };
 
 export default function Area3() {
     gsap.registerPlugin(ScrollTrigger);
     const panelsContainer = useRef<HTMLDivElement>(null);
 
-    const CompanyWrapper = ({
-        companyName,
-        index,
-        title,
-        mainSkill,
-        iconUrl,
-        detailUrl
-    }: CompanyWrapperProps) => {
+    const CompanyWrapper = ({ companyInfo, index }: CompanyWrapperProps) => {
         const animateClass = index === 0 ? '' : 'animate-panel';
 
         return (
             <div className={`panel ${animateClass}`}>
                 <div className="company-panel">
                     <div className="company-icon">
-                        <img src={iconUrl} alt="" />
+                        <img src={companyInfo.iconUrl} alt="" />
                     </div>
                     <div className="panel-desc-area">
-                        <div>Week{index + 1}</div>
-                        <div>{title}</div>
+                        <div className=" font-white title">Week{index + 1}</div>
+                        <div className="font-white title">{companyInfo.title}</div>
                         <div className="panel-desc-bottom">
-                            <div className="panel-desc-bottom-text">
-                                {companyName} ｜ {mainSkill}
+                            <div className="panel-desc-bottom-text font-white">
+                                {companyInfo.companyName} ｜ {companyInfo.mainSkill}
                             </div>
-                            <div className="panel-desc-bottom-text">MORE</div>
+                            <div className="panel-desc-bottom-text">
+                                <a
+                                    target="_blank"
+                                    href={companyInfo.detailUrl}
+                                    rel="noreferrer"
+                                >{`MORE >`}</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         );
     };
-
     useLayoutEffect(() => {
         const ctx = gsap.context((self) => {
             const panels = self.selector!('.animate-panel') as Array<gsap.TweenTarget>;
@@ -83,16 +78,7 @@ export default function Area3() {
     return (
         <div className="panels-container" ref={panelsContainer}>
             {companyInfoList.map((company, index) => {
-                return (
-                    <CompanyWrapper
-                        key={index}
-                        companyName={company.companyName}
-                        index={index}
-                        title={company.title}
-                        iconUrl={company.icon}
-                        mainSkill={company.mainSkill}
-                    />
-                );
+                return <CompanyWrapper key={index} companyInfo={company} index={index} />;
             })}
         </div>
     );

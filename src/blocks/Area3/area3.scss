@@ -9,7 +9,9 @@
     flex-wrap: nowrap;
 
     .panel {
-        background-color: #2e3966;
+        // background-color: #2e3966;
+        background: linear-gradient(to right, #2e3966 98%, #414a53 2%);
+        background-size: 100px 100%;
         height: 100vh;
         top: 0;
     }
@@ -43,6 +45,13 @@
             }
         }
         .panel-desc-area {
+            .font-white {
+                color: white;
+            }
+
+            .title {
+                font-size: 3rem;
+            }
             flex: 2;
             display: flex;
             flex-direction: column;
@@ -55,6 +64,10 @@
                 justify-content: space-between;
                 .panel-desc-bottom-text {
                     display: inline;
+
+                    a {
+                        color: #bbbbbb;
+                    }
                 }
             }
         }
