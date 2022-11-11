@@ -13,12 +13,12 @@ export default function CompanyLogoWrapper({ img, imgWithShadow }: CompanyImg) {
     useEffect(() => {
         if (isHover) {
             setImgUrl(imgWithShadow);
-            imgRef.current!.style.height = '400px';
-            imgRef.current!.style.width = '400px';
+            // imgRef.current!.style.height = '400px';
+            // imgRef.current!.style.width = '400px';
         } else {
             setImgUrl(img);
-            imgRef.current!.style.height = '350px';
-            imgRef.current!.style.width = '350px';
+            // imgRef.current!.style.height = '350px';
+            // imgRef.current!.style.width = '350px';
         }
     }, [img, imgWithShadow, isHover]);
 
