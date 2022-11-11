@@ -1,3 +1,11 @@
+export type CompanyInfo = {
+    companyName: string;
+    title: string;
+    mainSkill: string;
+    iconUrl: string;
+    detailUrl: string;
+};
+
 export type RaceInfo = {
     title: string;
     desc: string;

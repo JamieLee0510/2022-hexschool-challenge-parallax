@@ -9,6 +9,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Area3 from './blocks/Area3';
 import Area4 from './blocks/Area4';
 import Area5 from './blocks/Area5';
+import SliceInternal from './components/SliceInternal';
 
 function App() {
     const [dimensions, setDimensions] = React.useState({
@@ -32,6 +33,7 @@ function App() {
             <Area1 />
             <Area2 />
             <Area3 />
+            <SliceInternal />
             <Area4 />
             <Area5 />
         </>
