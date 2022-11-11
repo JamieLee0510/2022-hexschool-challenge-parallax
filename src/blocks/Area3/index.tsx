@@ -63,7 +63,7 @@ export default function Area3() {
             });
             ScrollTrigger.create({
                 animation: tl,
-                trigger: panelsContainer.current,
+                trigger: panelsContainer.current!,
                 start: 'top top',
                 end: () => '+=' + 100 * panels.length + '%',
                 pin: true,
