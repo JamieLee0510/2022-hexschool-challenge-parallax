@@ -1,10 +1,10 @@
 import React from 'react';
 
 import './area5.scss';
-import blockImg from '../../assets/section05/section08_icon01_1.png';
+import blockImg from '../../assets/section05/section08_icon01.png';
 import blockShallowImg from '../../assets/section05/section08_icon01_2.png';
-import kdanImg from '../../assets/section05/section08_icon02_1.png';
-import titanImg from '../../assets/section05/section08_icon03_1.png';
+import kdanImg from '../../assets/section05/section08_icon02.png';
+import titanImg from '../../assets/section05/section08_icon03.png';
 import titanShallowImg from '../../assets/section05/section08_icon03_2.png';
 import kdanShallowImg from '../../assets/section05/section08_icon02_2.png';
 import CompanyLogoWrapper from './CompanyLogoWrapper';
