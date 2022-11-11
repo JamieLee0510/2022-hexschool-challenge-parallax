@@ -5,5 +5,5 @@ type ImageProps = {
 };
 
 export default function ImageWraper({ imgUrl }: ImageProps) {
-    return <img src={imgUrl} alt="" style={{ width: '100%', height: '100%' }} />;
+    return <img src={imgUrl} alt="" style={{ width: '100%', height: 'auto' }} />;
 }

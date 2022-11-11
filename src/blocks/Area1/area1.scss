@@ -8,8 +8,12 @@
     // padding-left: 40px;
     margin: 0;
     overflow: hidden;
-    .title {
-        text-align: center;
+    .title-area {
+        .title-logo {
+            margin: auto;
+            width: 150px;
+            height: 50px;
+        }
     }
     .window_area_outer {
         width: 90%;

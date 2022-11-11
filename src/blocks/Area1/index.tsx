@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import IconWraper from '../../components/IconWraper';
 import WindowWraper from '../../components/WindowWraper01';
+import headerImg from '../../assets/section01/logo_thef2e.png';
 import windowBackgrountImg from '../../assets/section01/background02.png';
 import iconMenu from '../../assets/section01/bar_icon.png';
 import iconInternet from '../../assets/section01/icon_Internet.png';
@@ -44,7 +45,7 @@ export default function Area1() {
                     backgroundSize: '100%'
                 }
             );
-        },windowBg);
+        }, windowBg);
         return () => {
             ctx.revert();
         };
@@ -52,8 +53,10 @@ export default function Area1() {
 
     return (
         <div className="root1">
-            <div className="title">
-                <h1>THE F2E 4TH</h1>
+            <div className="title-area">
+                <div className="title-logo">
+                    <ImageWraper imgUrl={headerImg} />
+                </div>
             </div>
 
             {/* <div className="window_area_outer" ref={windowBg}> */}
