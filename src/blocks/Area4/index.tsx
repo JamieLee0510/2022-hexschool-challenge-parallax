@@ -34,7 +34,7 @@ export default function Area4() {
                     let p = self.progress;
                     if (p > 0.1) {
                         gsap.to(timeLineRef.current!, {
-                            xPercent: -150 * (p - 0.1),
+                            xPercent: -98 * (p - 0.1),
                             ease: 'none'
                         });
                     }

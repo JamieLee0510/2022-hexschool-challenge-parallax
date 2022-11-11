@@ -10,6 +10,7 @@ import Area3 from './blocks/Area3';
 import Area4 from './blocks/Area4';
 import Area5 from './blocks/Area5';
 import SliceInternal from './components/SliceInternal';
+import Area6 from './blocks/Area6';
 
 function App() {
     const [dimensions, setDimensions] = React.useState({
@@ -36,6 +37,7 @@ function App() {
             <SliceInternal />
             <Area4 />
             <Area5 />
+            <Area6 />
         </>
     );
 }
