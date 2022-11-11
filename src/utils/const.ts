@@ -1,6 +1,7 @@
 import companyIcon01 from '../assets/section03/company01.png';
 import companyIcon02 from '../assets/section03/company02.png';
 import companyIcon03 from '../assets/section03/company03.png';
+import { RaceDetail, RaceInfo } from './type';
 
 export const companyInfoList = [
     {
@@ -25,15 +26,6 @@ export const companyInfoList = [
         detailUrl: ''
     }
 ];
-
-export type RaceInfo = {
-    title: string;
-    desc: string;
-    startDate: string;
-    startDetail: string;
-    dueDate: string;
-    dueDetail: string;
-};
 
 export const raceInfoList: Array<RaceInfo> = [
     {
@@ -67,5 +59,23 @@ export const raceInfoList: Array<RaceInfo> = [
         startDetail: '每週四',
         dueDate: '11/24',
         dueDetail: ''
+    }
+];
+
+export const raceDetailList: Array<RaceDetail> = [
+    {
+        award: '初選佳作共六十位 ',
+        awardNum: '數位獎狀',
+        frequent: '每週主題個人組共十位 團體組十組'
+    },
+    {
+        award: '個人企業獎 共六位 ',
+        awardNum: 'NTD 3,000/位',
+        frequent: '每週各2名，前端1位、設計1位'
+    },
+    {
+        award: '團體企業獎 共三組 ',
+        awardNum: 'NTD 10,000/組',
+        frequent: '每週主題各1組'
     }
 ];
