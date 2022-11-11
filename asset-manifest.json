@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/2022-hexschool-challenge-parallax/static/css/main.3c35ba08.css",
-    "main.js": "/2022-hexschool-challenge-parallax/static/js/main.3ccfc7ec.js",
+    "main.css": "/2022-hexschool-challenge-parallax/static/css/main.718f7fdb.css",
+    "main.js": "/2022-hexschool-challenge-parallax/static/js/main.b493ffcd.js",
     "static/media/cor_left.png": "/2022-hexschool-challenge-parallax/static/media/cor_left.649e28bee786c88e73cb.png",
     "static/media/cor_right.png": "/2022-hexschool-challenge-parallax/static/media/cor_right.b0af82af86ed8065df79.png",
     "static/media/Thef2e4th_logo.png": "/2022-hexschool-challenge-parallax/static/media/Thef2e4th_logo.0df57c28714cef2d69a0.png",
@@ -23,11 +23,11 @@
     "static/media/icon02.png": "/2022-hexschool-challenge-parallax/static/media/icon02.32e00a91411a94900bea.png",
     "static/media/icon03.png": "/2022-hexschool-challenge-parallax/static/media/icon03.40bd80a5f60cb9d9089a.png",
     "index.html": "/2022-hexschool-challenge-parallax/index.html",
-    "main.3c35ba08.css.map": "/2022-hexschool-challenge-parallax/static/css/main.3c35ba08.css.map",
-    "main.3ccfc7ec.js.map": "/2022-hexschool-challenge-parallax/static/js/main.3ccfc7ec.js.map"
+    "main.718f7fdb.css.map": "/2022-hexschool-challenge-parallax/static/css/main.718f7fdb.css.map",
+    "main.b493ffcd.js.map": "/2022-hexschool-challenge-parallax/static/js/main.b493ffcd.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c35ba08.css",
-    "static/js/main.3ccfc7ec.js"
+    "static/css/main.718f7fdb.css",
+    "static/js/main.b493ffcd.js"
   ]
 }
