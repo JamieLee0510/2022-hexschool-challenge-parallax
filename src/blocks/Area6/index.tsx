@@ -95,10 +95,6 @@ const checkTitleLength = (title: string) => {
     return title.length <= titleLengthLimit;
 };
 
-const checkContentLength = (content: string) => {
-    return content.length <= 30;
-};
-
 export default function Area6() {
     const [qaSection, setQaSection] = useState<QaFilter>({
         general: true,
@@ -126,7 +122,7 @@ export default function Area6() {
         });
     };
 
-    const data = (qaStr: string, transFormData: string) => {
+    const qaContent = (qaStr: string, transFormData: string) => {
         const list = [];
         let preIdx = 0;
 
@@ -135,6 +131,27 @@ export default function Area6() {
             list.push(
                 <tspan key={preIdx} x="0" y={y}>
                     {qaStr.slice(preIdx, (preIdx += contentLengthLimit))}
+                </tspan>
+            );
+            y = y + 28.8;
+        }
+
+        return (
+            <text className="w" transform={transFormData}>
+                {list}
+            </text>
+        );
+    };
+
+    const qaTitle = (qaStr: string, transFormData: string) => {
+        const list = [];
+        let preIdx = 0;
+
+        let y = 0;
+        while (preIdx < qaStr.length) {
+            list.push(
+                <tspan key={preIdx} x="0" y={y}>
+                    {qaStr.slice(preIdx, (preIdx += titleLengthLimit))}
                 </tspan>
             );
             y = y + 28.8;
@@ -164,8 +181,6 @@ export default function Area6() {
     const demoRef = useRef<NodeListOf<Element> | Array<null>>([]);
 
     // useEffect(() => {
-    //     demoRef.current! = document.querySelectorAll('.demo1');
-    // }, []);
 
     return (
         <div className="root6">
@@ -5824,28 +5839,26 @@ export default function Area6() {
                             <rect className="y" x="1776.05" y="956.26" width="2" height="1" />
                         </g>
                     </g>
-                    {qaSection.team && <g id="g">{data(qa[5].a, 'translate(930.86 802.15)')}</g>}
-                    {(qaSection.team || qaSection.ui) && (
-                        <g id="h">{data(qa[4].a, 'translate(81.23 801.9)')}</g>
-                    )}
-                    <g id="i">{data(qa[3].a, 'translate(932.1 571.61)')}</g>
-                    <g id="j">{data(qa[2].a, 'translate(82.1 574.61)')}</g>
-                    <g id="k">{data(qa[1].a, 'translate(931.11 304.7)')}</g>
-                    <g id="l">{data(qa[0].a, 'translate(80.34 304.38)')}</g>
+                    {qaSection.team && <g id="g">{qaContent(qa[5].a, 'translate(930.86 832)')}</g>}
+                    {qaSection.team && <g id="h">{qaContent(qa[4].a, 'translate(81.23 802)')}</g>}
+                    {qaSection.ui && <g id="h">{qaContent(qa[4].a, 'translate(81.23 872)')}</g>}
+                    <g id="i">{qaContent(qa[3].a, 'translate(932.1 571.61)')}</g>
+                    <g id="j">{qaContent(qa[2].a, 'translate(82.1 574.61)')}</g>
+                    <g id="k">{qaContent(qa[1].a, 'translate(931.11 304.7)')}</g>
+                    <g id="l">{qaContent(qa[0].a, 'translate(80.34 304.38)')}</g>
 
                     {qaSection.team && (
                         <g id="m">
                             <g>
-                                {' '}
                                 {checkTitleLength(qa[5].q) && (
-                                    <text className="x" transform="translate(936.91 727.95)">
+                                    <text className="x" transform="translate(936.91 758)">
                                         <tspan x="0" y="0">
                                             問題06. {qa[5].q}
                                         </tspan>
                                     </text>
                                 )}
                                 {!checkTitleLength(qa[5].q) && (
-                                    <text className="x" transform="translate(936.91 727.95)">
+                                    <text className="x" transform="translate(936.91 758)">
                                         <tspan x="0" y="-30">
                                             問題06. {qa[5].q.slice(0, titleLengthLimit)}
                                         </tspan>
@@ -5854,22 +5867,22 @@ export default function Area6() {
                                         </tspan>
                                     </text>
                                 )}
-                                <line className="ab" x1="931.6" y1="752.5" x2="1318.6" y2="752.5" />
+                                <line className="ab" x1="931.6" y1="783" x2="1318.6" y2="783" />
                             </g>
                         </g>
                     )}
-                    {(qaSection.team || qaSection.ui) && (
+                    {qaSection.team && (
                         <g id="n">
                             <g>
                                 {checkTitleLength(qa[4].q) && (
-                                    <text className="x" transform="translate(86.91 726.95)">
+                                    <text className="x" transform="translate(86.91 727)">
                                         <tspan x="0" y="0">
                                             問題05. {qa[4].q}
                                         </tspan>
                                     </text>
                                 )}
                                 {!checkTitleLength(qa[4].q) && (
-                                    <text className="x" transform="translate(86.91 726.95)">
+                                    <text className="x" transform="translate(86.91 727)">
                                         <tspan x="0" y="-30">
                                             問題05. {qa[4].q.slice(0, titleLengthLimit)}
                                         </tspan>
@@ -5878,7 +5891,31 @@ export default function Area6() {
                                         </tspan>
                                     </text>
                                 )}
-                                <line className="ab" x1="81.6" y1="751.5" x2="468.6" y2="751.5" />
+                                <line className="ab" x1="81.6" y1="752" x2="468.6" y2="752" />
+                            </g>
+                        </g>
+                    )}
+                    {qaSection.ui && (
+                        <g id="n">
+                            <g>
+                                {checkTitleLength(qa[4].q) && (
+                                    <text className="x" transform="translate(86.91 797)">
+                                        <tspan x="0" y="0">
+                                            問題05. {qa[4].q}
+                                        </tspan>
+                                    </text>
+                                )}
+                                {!checkTitleLength(qa[4].q) && (
+                                    <text className="x" transform="translate(86.91 797)">
+                                        <tspan x="0" y="-30">
+                                            問題05. {qa[4].q.slice(0, titleLengthLimit)}
+                                        </tspan>
+                                        <tspan x="0" y="0">
+                                            {'' + qa[4].q.slice(titleLengthLimit)}
+                                        </tspan>
+                                    </text>
+                                )}
+                                <line className="ab" x1="81.6" y1="812" x2="468.6" y2="812" />
                             </g>
                         </g>
                     )}
@@ -6062,6 +6099,7 @@ export default function Area6() {
                     </g>
                 </svg>
             </div>
+            <div className="footer">Copyright © 2022 HexSchool.All rights reserved.</div>
         </div>
     );
 }
