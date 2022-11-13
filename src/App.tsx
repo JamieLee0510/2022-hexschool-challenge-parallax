@@ -17,6 +17,8 @@ function App() {
         height: window.innerHeight,
         width: window.innerWidth
     });
+
+    const Area7 = React.lazy(() => import('./blocks/Area6'));
     React.useEffect(() => {
         function handleResize() {
             setDimensions({
@@ -37,6 +39,7 @@ function App() {
             <SliceInternal />
             <Area4 />
             <Area5 />
+            {/* <Area7 /> */}
             <Area6 />
         </>
     );

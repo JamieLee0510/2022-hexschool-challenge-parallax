@@ -1,5 +1,64 @@
+$root6BgColor: #e6e5dc;
+$root6InnerColor: #f4f3de;
+
 .root6 {
     width: 100%;
     height: 100vh;
     background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        width: 80%;
+        height: auto;
+        // margin: auto;
+        svg {
+            .disappear {
+                display: none;
+            }
+            .touchTitle:hover {
+                cursor: pointer;
+            }
+            .w {
+                font-size: 24px;
+            }
+            .w,
+            .x {
+                font-family: HiraginoSansGB-W3-GBpc-EUC-H, Hiragino Sans GB;
+            }
+            .y {
+                stroke-width: 2.83px;
+            }
+            .y,
+            .a,
+            .aa,
+            .ab {
+                stroke-miterlimit: 10;
+            }
+            .y,
+            .aa {
+                fill: #0a0a0a;
+                stroke: #3a3a3a;
+            }
+            .a {
+                fill: #3a3a3a;
+                stroke: #9b893d;
+                stroke-width: 0.06px;
+            }
+            .ac {
+                fill: #f4f2dc;
+            }
+            .aa {
+                stroke-width: 4px;
+            }
+            .ab {
+                fill: none;
+                stroke: #000;
+            }
+            .x {
+                // font-size: 20px;
+                font-size: 27.47px;
+            }
+        }
+    }
 }
