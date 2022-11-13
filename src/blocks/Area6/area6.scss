@@ -8,6 +8,7 @@ $root6InnerColor: #f4f3de;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     .container {
         width: 80%;
         height: auto;
@@ -60,5 +61,9 @@ $root6InnerColor: #f4f3de;
                 font-size: 27.47px;
             }
         }
+    }
+    .footer {
+        margin-top: 50px;
+        font-family: 'OCR A Std';
     }
 }
