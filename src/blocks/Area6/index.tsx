@@ -6099,7 +6099,7 @@ export default function Area6() {
                     </g>
                 </svg>
             </div>
-            <div className="footer">Copyright © 2022 HexSchool.All rights reserved.</div>
+            <div className="footer">Copyright © 2022 Kim&Ding.All rights reserved.</div>
         </div>
     );
 }
