@@ -156,12 +156,10 @@ export default function Area2() {
                         }
                     }
                     if (p > 0.3) {
-                       
                         hide(loadingRef);
                     }
-                   
+
                     if (Math.ceil(p * 10) === 4) {
-                     
                         hide(cooUxFrontendTrigger);
                         setCooFlag(false);
                         if (!msgFlag) {
